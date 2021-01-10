@@ -1,0 +1,95 @@
+
+W:\[__stepik]\[academy]\flask01_платный\week04\_задание_week04_БД>py_tut_week04.bat -m flake8 app.py  
+
+W:\[__stepik]\[academy]\flask01_платный\week04\_задание_week04_БД>"W:\[__stepik]\[academy]\flask01_платный\week04\_задание_week04_БД\venv\Scripts\python.exe" -m flake8 app.py 
+app.py:2:1: F401 'babel' imported but unused
+app.py:11:1: F401 'flask_sqlalchemy.SQLAlchemy' imported but unused
+app.py:12:1: F401 'flask_migrate.Migrate' imported but unused
+
+app.py:20:9: E117 over-indented
+app.py:24:13: E231 missing whitespace after ','
+app.py:24:15: E231 missing whitespace after ','
+app.py:24:18: E231 missing whitespace after ','
+app.py:25:8: E713 test for membership should be 'not in'
+app.py:28:14: E111 indentation is not a multiple of four
+app.py:28:14: E117 over-indented
+app.py:32:4: E713 test for membership should be 'not in'
+app.py:33:7: E111 indentation is not a multiple of four
+app.py:33:7: E117 over-indented
+app.py:34:7: E111 indentation is not a multiple of four
+app.py:35:14: E111 indentation is not a multiple of four
+app.py:35:14: E117 over-indented
+app.py:37:1: E302 expected 2 blank lines, found 1
+app.py:42:40: E231 missing whitespace after ','
+app.py:44:1: E302 expected 2 blank lines, found 1
+app.py:44:36: E231 missing whitespace after ','
+app.py:50:16: E225 missing whitespace around operator
+app.py:73:80: E501 line too long (86 > 79 characters)
+app.py:76:1: E302 expected 2 blank lines, found 1
+app.py:105:1: E302 expected 2 blank lines, found 1
+app.py:105:42: E261 at least two spaces before inline comment
+app.py:112:10: E111 indentation is not a multiple of four
+app.py:112:10: E117 over-indented
+app.py:147:10: E111 indentation is not a multiple of four
+app.py:147:10: E117 over-indented
+app.py:158:80: E501 line too long (121 > 79 characters)
+app.py:163:80: E501 line too long (80 > 79 characters)
+app.py:170:24: E712 comparison to False should be 'if cond is False:' or 'if not cond:'
+app.py:170:24: E225 missing whitespace around operator
+app.py:170:32: E261 at least two spaces before inline comment
+app.py:171:17: E117 over-indented
+app.py:177:80: E501 line too long (83 > 79 characters)
+app.py:179:39: E231 missing whitespace after ','
+app.py:183:1: E302 expected 2 blank lines, found 1
+app.py:187:1: E302 expected 2 blank lines, found 1
+app.py:190:13: E117 over-indented
+app.py:216:29: E128 continuation line under-indented for visual indent
+app.py:217:29: E128 continuation line under-indented for visual indent
+app.py:224:25: E231 missing whitespace after ','
+app.py:224:33: E231 missing whitespace after ','
+app.py:225:80: E501 line too long (101 > 79 characters)
+app.py:231:29: E127 continuation line over-indented for visual indent
+app.py:233:1: E302 expected 2 blank lines, found 1
+app.py:240:10: E111 indentation is not a multiple of four
+app.py:240:10: E117 over-indented
+app.py:249:5: E303 too many blank lines (2)
+app.py:275:1: E302 expected 2 blank lines, found 1
+app.py:279:6: E111 indentation is not a multiple of four
+app.py:279:6: E117 over-indented
+app.py:280:10: E111 indentation is not a multiple of four
+app.py:281:10: E114 indentation is not a multiple of four (comment)
+app.py:282:10: E111 indentation is not a multiple of four
+app.py:283:10: E114 indentation is not a multiple of four (comment)
+app.py:284:10: E111 indentation is not a multiple of four
+app.py:285:10: E114 indentation is not a multiple of four (comment)
+app.py:286:10: E111 indentation is not a multiple of four
+app.py:287:10: E114 indentation is not a multiple of four (comment)
+app.py:288:10: E111 indentation is not a multiple of four
+app.py:289:10: E114 indentation is not a multiple of four (comment)
+app.py:291:6: E114 indentation is not a multiple of four (comment)
+app.py:292:6: E111 indentation is not a multiple of four
+app.py:293:6: E111 indentation is not a multiple of four
+app.py:294:10: E111 indentation is not a multiple of four
+app.py:295:14: E111 indentation is not a multiple of four
+app.py:296:18: E111 indentation is not a multiple of four
+app.py:297:14: E111 indentation is not a multiple of four
+app.py:298:10: E111 indentation is not a multiple of four
+app.py:299:14: E111 indentation is not a multiple of four
+app.py:300:14: E111 indentation is not a multiple of four
+app.py:301:6: E111 indentation is not a multiple of four
+app.py:302:10: E111 indentation is not a multiple of four
+app.py:303:10: E114 indentation is not a multiple of four (comment)
+app.py:304:10: E111 indentation is not a multiple of four
+app.py:305:10: E111 indentation is not a multiple of four
+app.py:307:6: E111 indentation is not a multiple of four
+app.py:308:21: E128 continuation line under-indented for visual indent
+app.py:309:21: E128 continuation line under-indented for visual indent
+app.py:310:15: E124 closing bracket does not match visual indentation
+app.py:311:6: E111 indentation is not a multiple of four
+app.py:312:6: E111 indentation is not a multiple of four
+app.py:313:6: E111 indentation is not a multiple of four
+app.py:317:6: E303 too many blank lines (2)
+app.py:317:6: E114 indentation is not a multiple of four (comment)
+app.py:318:6: E111 indentation is not a multiple of four
+app.py:322:1: E305 expected 2 blank lines after class or function definition, found 1
+app.py:326:4: W292 no newline at end of file

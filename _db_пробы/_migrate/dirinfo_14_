@@ -1,0 +1,14 @@
+﻿
+сначала -m flask db init
+
+потом
+py_tut_week04.bat -m flask db migrate
+
+потом
+flask db upgrade
+
+отмена
+flask db downgrade
+
+
+

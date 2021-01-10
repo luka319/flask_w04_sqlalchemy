@@ -1,0 +1,13 @@
+CREATE TABLE teachers (
+	id INTEGER NOT NULL, 
+	name VARCHAR NOT NULL, 
+	free VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+);
+CREATE TABLE goals (
+	id INTEGER NOT NULL, 
+	goal VARCHAR NOT NULL, 
+	teachers_id INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(teachers_id) REFERENCES teachers (id)
+);

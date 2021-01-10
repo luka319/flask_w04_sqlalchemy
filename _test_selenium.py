@@ -1,0 +1,10 @@
+﻿"""
+'/')                                             
+'/all/')                                         
+'/goals/<goal>/')                                
+'/profiles/<id_teacher>/')                       
+'/request/')                                     
+'/request_done/')                                
+'/booking/<id_teacher>/<day_of_week>/<time>/')   
+'/booking_done/')                                
+"""

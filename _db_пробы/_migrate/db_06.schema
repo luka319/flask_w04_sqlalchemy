@@ -1,0 +1,45 @@
+CREATE TABLE teachers (
+	id INTEGER NOT NULL, 
+	name VARCHAR NOT NULL, 
+	about TEXT, 
+	rating FLOAT, 
+	picture VARCHAR, 
+	price INTEGER, 
+	free VARCHAR, 
+	PRIMARY KEY (id)
+);
+CREATE TABLE goals (
+	id INTEGER NOT NULL, 
+	goal VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+);
+CREATE TABLE requests (
+	id INTEGER NOT NULL, 
+	date DATE, 
+	goal VARCHAR, 
+	time TIME, 
+	name VARCHAR, 
+	phone VARCHAR, 
+	PRIMARY KEY (id)
+);
+CREATE TABLE association (
+	teachers_id INTEGER, 
+	goals_id INTEGER, 
+	FOREIGN KEY(teachers_id) REFERENCES teachers (id), 
+	FOREIGN KEY(goals_id) REFERENCES goals (id)
+);
+CREATE TABLE bookings (
+	id INTEGER NOT NULL, 
+	date DATE NOT NULL, 
+	"clientWeekday" VARCHAR, 
+	"clientTime" TIME, 
+	teachers_id INTEGER, 
+	"clientName" VARCHAR, 
+	"clientPhone" VARCHAR, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(teachers_id) REFERENCES teachers (id)
+);
+CREATE TABLE alembic_version (
+	version_num VARCHAR(32) NOT NULL, 
+	CONSTRAINT alembic_version_pkc PRIMARY KEY (version_num)
+);
