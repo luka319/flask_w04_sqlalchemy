@@ -188,6 +188,9 @@ for z in te:
                 free=json.dumps(free_, ensure_ascii=False),
                 # откуда - куда
                 ))
+    db.session.add(
+        Goal(goal=json.dumps(goals_tut, ensure_ascii=False),  # new!!!!
+             ))
     db.session.commit()
     sleep(0.5)  # а надо ли? сколько времени идет коммит???
 

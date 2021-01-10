@@ -1,0 +1,1 @@
+sqlite3.exe db_11.db < zapros_teachers.sql > res(db_11)teachers_txt
