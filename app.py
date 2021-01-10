@@ -288,26 +288,35 @@ def main_profiles(id_teacher):
     # из БД: (начало)  ==========================================
     teachers_query = db.session.query(Teacher).order_by(Teacher.id_teacher)
     teachers = teachers_query.all()
+
+    # goals_db = db.session.query(Goal).order_by(id)
+    goals_db = db.session.query(Goal)
+    goals_sql = goals_db.all()
+
     # user = User.query.get_or_404(id)
     # print("Получили", len(teachers), "преподавателей")
     for teacher in teachers:
         if teacher.id_teacher == id_teacher:
             name = teacher.name
             # goals_tut = teacher.goals # ??? !!!
-            goals_tut = "пока пустышка"
+            # goals_tut = "пока пустышка"
             # print(f'{goals_tut =}')
             picture = teacher.picture
             about = teacher.about
             rating = teacher.rating
             price = teacher.price
             free = json.loads(teacher.free)
+            for goal_sql in goals_sql:
+                if teacher.id == goal_sql.id:
+                    goals_tut = json.loads(goal_sql.goal)
 
     print(f"{name = }")
     print(f"{id_teacher = }")
+    print(f"{goals_tut = }")
     # из БД (конец) =============================================
 
-    with open("goals.json", "r", encoding="utf-8") as f:
-        goals = json.load(f)  #
+    # with open("goals.json", "r", encoding="utf-8") as f:
+    #     goals = json.load(f)  #
 
     for zz, kk in goals.items():
         # print(f'{zz =}')
